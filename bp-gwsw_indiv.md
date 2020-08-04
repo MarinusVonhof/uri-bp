@@ -1,7 +1,7 @@
 # Best practice: URI-strategie linked-data-assets stedelijk water
 
 ## In het kort
-<div style="color:gray">*Beschrijving van de best practice in iets langere bewoordingen*></div>
+<div style="color:gray">*Beschrijving van de best practice in iets langere bewoordingen*</div>
 Een **best practice** voor het identificeren van individuen in linked-data vorm binnen de discipline stedelijk water.
 
 Gebaseerd op de [NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm), zie hoofdstuk 7.7.1 .
@@ -12,14 +12,22 @@ Daarin worden de volgende bronnen aangehaald:
 * Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
-<div style="color:gray">Beschrijft de reden waarom dit goed is om te doen</div>
+<div style="color:gray;height:0.8rem">*Beschrijft de reden waarom dit goed is om te doen*</div>
+
+Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk waterbeheer beschrijft. Het GWSW is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in de linked-data taal RDF/RDFS/OWL-2. 
+
+Meer dan 80 gemeenten hebben datasets opgebouwd conform het GWSW en gepubliceerd op de GWSW Server. Die datasets bevatten de "assets" en activiteiten op het gebied van stedelijk water. De "assets" bestaan veelal uit putten en leidingen, individuen genoemd. Het verwijzen naar individuen met URI’s is essentieel binnen het linked-data principe, zeker nu er meer linked-data platforms verschijnen en de GWSW datasets steeds breder worden toegepast.
+
+Een uniforme URI-strategie voor individuen in de "bebouwde omgeving" ontbreekt nog. In zo'n URI kan dan bijvoorbeeld de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) worden onderscheiden. Op korte termijn zou deze strategie uitgewerkt, vastgesteld en gebruikt moeten worden.
+
 
 ## Beoogd resultaat
-<div style="color:gray">Beschrijft het beoogde resultaat</div>
+<div style="color:gray">*Beschrijft het beoogde resultaat*</div>
+We willen komen tot een uniforme URI-strategie voor individuen in de "bebouwde omgeving", om te beginnen met stedelijk water. Zodanig dat elke individu met de URI uniek geïdentificeerd kan worden. 
 
 ## Implementatie
 
-<div style="color:gray">Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.</div>
+<div style="color:gray">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
 
 ### Uitgangspunt: URI's van concepten in het GWSW Model
 
