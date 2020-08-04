@@ -16,10 +16,47 @@ Beschrijft de reden waarom dit goed is om te doen
 ## Beoogd resultaat
 Beschrijft het beoogde resultaat
 
-## Mogelijke aanpak voor implementatie
-Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden. 
+## Implementatie
 
-## Hoe testen 
+<div style="color:gray">Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.</div>
+
+### Uitgangspunt: URI's van concepten in het GWSW Model
+
+Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we:
+https://{domain}/{type}/{version}/{filter}/{reference}
+
+{domain} is het web-domein: voor de GWSW-Ontologie is {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
+
+{type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
+
+{version} is de versie: voor deze GWSW ontologie is dat "2.0".
+
+{filter} is het geldende filter ("view") op de GWSW ontologie: om alle concepten op te kunnen vragen geldt filter "Totaal".
+
+{reference} is de verwijzing naar het specifieke concept:
+Het hanteren van begrijpbare namen voor concepten is een gangbare RDF praktijk en ook voor het GWSW heel bruikbaar. We gaan uit van camelCase en CamelCase notatie van de namen voor respectievelijk de properties (starten met lowercase) en de klassen (starten met uppercase).
+
+Een externe overstortput is een GWSW concept (klasse) en heeft in GWSW versie 1.5.1 de URI http://data.gwsw.nl/1.5.1/Totaal/ExterneOverstortput.
+De breedte van een put is een attribuut en heeft de URI http://data.gwsw.nl/1.5.1/Totaal/breedtePut.
+
+
+
+
+
+
+
+De unieke naam binnen het rioleringsstelsel
+https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . 
+
+Een synoniem kan, GWSW 1.n kent skos:altLabel:
+https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442” .
+
+Idem in een andere taal-context:
+https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .
+
+
+
+## Testen 
 Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.
 
 ## Relevante requirements
