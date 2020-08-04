@@ -40,34 +40,31 @@ De algemene opbouw van de URI is:
 
 * {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 * {type}: Het betreft een individual, dus is het type een identifier "id".
-* {organisatie}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor "Roosendaal" betekent dit de code "0601674".
+* {organisatie}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor bijvoorbeeld de gemeente Roosendaal betekent dit de code "0601674".
 * {reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
 
-De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
+<div class="example"><div class="example-title marker">De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:</div>
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
-
-<div class="example"><div class="example-title marker"><span>Prefixes in een dataset"></span></div>
-<p>@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .   
-@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; .</p>
 </div>
 
-<div class="example"><div class="example-title marker"><span>De unieke naam binnen het rioleringsstelsel"></span></div>
+<div class="example"><div class="example-title marker"><span>Prefixes in een dataset</span></div>
+<p>@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .</p>
+<p>@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; .</p>
+</div>
+
+<div class="example"><div class="example-title marker"><span>De unieke naam binnen het rioleringsstelsel</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
 </div>
 
-<div class="example" title="De unieke naam binnen het rioleringsstelsel">
-<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
-</div>
-
-<div class="example"><div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel"</span></div>
+<div class="example"><div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442”.</p>
 </div>
 
-<div class="example"><div class="example-title marker"><span>Idem in een andere taal-context"></span></div>
+<div class="example"><div class="example-title marker"><span>Idem in een andere taal-context</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .</p>
 </div>
 
-<div class="example"><div class="example-title marker"><span>Typering van het individu"></span></div>
+<div class="example"><div class="example-title marker"><span>Typering van het individu</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .</p>
 </div>
 
