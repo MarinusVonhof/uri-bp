@@ -1,6 +1,7 @@
 # Best practice: URI-strategie linked-data-assets stedelijk water
 
 ## In het kort
+<div style="color:gray">*Beschrijving van de best practice in iets langere bewoordingen*></div>
 Een **best practice** voor het identificeren van individuen in linked-data vorm binnen de discipline stedelijk water.
 
 Gebaseerd op de [NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm), zie hoofdstuk 7.7.1 .
@@ -11,10 +12,10 @@ Daarin worden de volgende bronnen aangehaald:
 * Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
-Beschrijft de reden waarom dit goed is om te doen
+<div style="color:gray">Beschrijft de reden waarom dit goed is om te doen</div>
 
 ## Beoogd resultaat
-Beschrijft het beoogde resultaat
+<div style="color:gray">Beschrijft het beoogde resultaat</div>
 
 ## Implementatie
 
@@ -22,23 +23,47 @@ Beschrijft het beoogde resultaat
 
 ### Uitgangspunt: URI's van concepten in het GWSW Model
 
-Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we:
+Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we: (http wordt omgeleid naar https)
 https://{domain}/{type}/{version}/{filter}/{reference}
 
 {domain} is het web-domein: voor de GWSW-Ontologie is {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
 
 {type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
 
-{version} is de versie: voor deze GWSW ontologie is dat "2.0".
+{version} is de versie: deze meest recente versie van de GWSW ontologie is "1.5.1".
 
 {filter} is het geldende filter ("view") op de GWSW ontologie: om alle concepten op te kunnen vragen geldt filter "Totaal".
 
 {reference} is de verwijzing naar het specifieke concept:
 Het hanteren van begrijpbare namen voor concepten is een gangbare RDF praktijk en ook voor het GWSW heel bruikbaar. We gaan uit van camelCase en CamelCase notatie van de namen voor respectievelijk de properties (starten met lowercase) en de klassen (starten met uppercase).
 
-Een externe overstortput is een GWSW concept (klasse) en heeft in GWSW versie 1.5.1 de URI http://data.gwsw.nl/1.5.1/Totaal/ExterneOverstortput.
-De breedte van een put is een attribuut en heeft de URI http://data.gwsw.nl/1.5.1/Totaal/breedtePut.
+Een externe overstortput is een GWSW concept (klasse) en heeft in GWSW versie 1.5.1 de URI https://data.gwsw.nl/1.5.1/Totaal/ExterneOverstortput.
+De breedte van een put is een attribuut en heeft de URI https://data.gwsw.nl/1.5.1/Totaal/breedtePut.
 
+### URI's van individuen binnen de discipline stedelijk water
+
+
+Een voorbeeld van de mogelijkheden met gebruik van de eerder genoemde opbouw:
+https://{domain}/{type}/{organisatie}#{reference} 
+
+{domain}: Identiek aan het GWSW-model
+
+{type}: Het betreft nu een individual, dus is het type een identifier "id".
+
+{organisatie}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor "Roosendaal" betekent dit de code "0601674".
+
+{reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
+ 
+De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
+https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
+
+Vanwege het ontbreken van een uniforme identificatie gebruiken we in dit document de neutrale aanduiding van individuen.
+
+Dataset: Voorbeeld identificatie
+@prefix gwsw:    	<https://data.gwsw.nl/2.0/totaal/> . 
+@prefix ex:    	<https://w3id.org/def/example#> . 
+
+ex:Put_1	rdf:type	gwsw:ExterneOverstortput .
 
 
 
