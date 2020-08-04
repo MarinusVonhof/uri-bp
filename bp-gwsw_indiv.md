@@ -36,7 +36,7 @@ We willen komen tot een uniforme URI-strategie voor individuen in de "bebouwde o
 In de URI wordt de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) onderscheiden.
 De algemene opbouw van de URI is:
 
-`    `**https://{domain}/{type}/{organisatie}#{reference}** *(http wordt omgeleid naar https)*
+&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{organisatie}#{reference}** *(http wordt omgeleid naar https)*
 
 * {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 * {type}: Het betreft een individual, dus is het type een identifier "id".
@@ -81,7 +81,7 @@ Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.n
 ### URI-strategie voor concepten in het GWSW Model
 
 Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we:
-`    `**https://{domain}/{type}/{version}/{filter}/{reference}** *(http wordt omgeleid naar https)*
+&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{version}/{filter}/{reference}** *(http wordt omgeleid naar https)*
 
 * {domain} is het web-domein: voor de GWSW-Ontologie is dit {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
 * {type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
