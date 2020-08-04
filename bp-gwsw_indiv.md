@@ -46,29 +46,28 @@ De algemene opbouw van de URI is:
 De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 
-<p class="example" title="Prefixes in een dataset">
-@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .  
-@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; . 
-</p>
+<div class="example"><div class="example-title marker"><span>Prefixes in een dataset"></span></div>
+<p>@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .   
+@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; .</p>
+</div>
 
-<p class="ednote" title="De unieke naam binnen het rioleringsstelsel">
-indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . 
-</p>
+<div class="example"><div class="example-title marker"><span>De unieke naam binnen het rioleringsstelsel"></span></div>
+<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
+</div>
 
-<div class="example">
-<div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel"</span></div>
+<div class="example"><div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel"</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442”.</p>
 </div>
 
-<p class="example" title="Idem in een andere taal-context">
-indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .
-</p>
+<div class="example"><div class="example-title marker"><span>Idem in een andere taal-context"></span></div>
+<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .</p>
+</div>
 
-<p class="example" title="Typering van het individu">
-indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .
-</p>
+<div class="example"><div class="example-title marker"><span>Typering van het individu"></span></div>
+<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .</p>
+</div>
 
-<p class="note" title="Een alternatief: BGT-ID">
+<p class="note" title="Een alternatief: BGT-ID"> <!-- dit werkte niet voor remarks -->
 Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/). De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
 </p>
 
