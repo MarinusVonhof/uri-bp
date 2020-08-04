@@ -18,7 +18,7 @@ Daarin worden de volgende bronnen aangehaald:
 
 Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk water beschrijft. Het is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in RDF/RDFS/OWL-2. 
 
-Meer dan 80 gemeenten hebben datasets opgebouwd conform het GWSW en gepubliceerd op de GWSW Server. Die datasets bevatten de assets en activiteiten op het gebied van stedelijk water. Die assets bestaan veelal uit putten en leidingen, ze worden in het algemeen "individuen" genoemd. Het verwijzen naar individuen met URI’s is essentieel binnen het linked-data principe, zeker nu er meer linked-data platforms verschijnen en de GWSW datasets steeds breder worden toegepast.
+Meer dan 80 gemeenten hebben al datasets opgebouwd conform het GWSW en gepubliceerd op de GWSW Server. Die datasets bevatten de assets en activiteiten op het gebied van stedelijk water. Die assets bestaan veelal uit putten en leidingen, ze worden in het algemeen "individuen" genoemd. Het verwijzen naar individuen met URI’s is essentieel binnen het linked-data principe, zeker nu er meer linked-data platforms verschijnen en de GWSW datasets steeds breder worden toegepast.
 
 Een uniforme URI-strategie voor individuen in de "bebouwde omgeving" ontbreekt nog. 
 
@@ -36,7 +36,7 @@ We willen komen tot een uniforme URI-strategie voor individuen in de "bebouwde o
 In de URI wordt de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) onderscheiden.
 De algemene opbouw van de URI is:
 
-https://{domain}/{type}/{organisatie}#{reference} (http wordt omgeleid naar https)
+https://{domain}/{type}/{organisatie}#{reference} **(http wordt omgeleid naar https)**
 
 * {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 * {type}: Het betreft een individual, dus is het type een identifier "id".
@@ -62,16 +62,24 @@ indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP2
 Typering van het individu:
 indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .
 
+<p class="note" title="BGT-ID">
+Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)
+De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
+</p>
+
+
+
+
 ## Testen 
 <div style="color:gray;font-size:0.8em;">*Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.*</div>
 
 ## Relevante requirements
 <div style="color:gray;font-size:0.8em;">*In het SDW-BP document staan geen use cases en requirements; deze waren al in een apart document opgenomen [[SDW-UCR]]. Onder dit kopje 'relevante requirements' wordt verwezen naar de voor deze best practice relevante requirements.*</div>
 
-### Uitgangspunt: URI's van concepten in het GWSW Model
+### URI-strategie voor concepten in het GWSW Model
 
-Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we: (http wordt omgeleid naar https)
-https://{domain}/{type}/{version}/{filter}/{reference}
+Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we:
+https://{domain}/{type}/{version}/{filter}/{reference} **(http wordt omgeleid naar https)**
 
 * {domain} is het web-domein: voor de GWSW-Ontologie is dit {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
 * {type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
@@ -90,7 +98,7 @@ Zie het document [GWSW-OroX Bestandsopbouw](https://apps.gwsw.nl/doc/GWSW.orox%2
 Zie de website met [GWSW Applicaties](https://apps.gwsw.nl)
 
 ### Dataset via GWSW API op de GWSW Server publiceren
-Zie de [API Specificaties](https://apps.gwsw.nl/item_redoc) 
+Zie de [API Specificatie](https://apps.gwsw.nl/item_redoc) 
 
 ## Baten
 <div style="color:gray;font-size:0.8em;">Het Data on the Web Best Practices [[dwbp]] document bevat een [bijlage](https://www.w3.org/TR/dwbp/#BP_Benefits) waarin een aantal baten worden beschreven die kunnen worden bereikt door het volgen van de best practices. Onder dit kopje 'baten' wordt dan verwezen naar de specifieke baten die worden gerealiseerd door deze specifieke best practice te volgen.*</div>
