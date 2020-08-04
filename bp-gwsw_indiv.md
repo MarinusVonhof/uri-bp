@@ -51,7 +51,7 @@ https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2
 @prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; . 
 </p>
 
-<p class="example" title="De unieke naam binnen het rioleringsstelsel">
+<p class="ednote" title="De unieke naam binnen het rioleringsstelsel">
 indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . 
 </p>
 
