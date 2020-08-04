@@ -12,7 +12,7 @@ Daarin worden de volgende bronnen aangehaald:
 * Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
-<div style="color:gray;height:0.6em;">*Beschrijft de reden waarom dit goed is om te doen*</div>
+<div style="color:gray;font-size:0.6em;">*Beschrijft de reden waarom dit goed is om te doen*</div>
 
 Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk water beschrijft. Het is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in RDF/RDFS/OWL-2. 
 
