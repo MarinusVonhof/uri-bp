@@ -46,29 +46,31 @@ https://{domain}/{type}/{organisatie}#{reference} **(http wordt omgeleid naar ht
 De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 
-Dataset: Voorbeeld identificatie
+<p class="example" title="Prefixes in een dataset">
 @prefix gwsw:    	<https://data.gwsw.nl/1.5.1/totaal/> . 
 @prefix indiv:    	<https://data.gwsw.nl/id/061674#> . 
+</p>
 
-De unieke naam binnen het rioleringsstelsel
+<p class="example" title="De unieke naam binnen het rioleringsstelsel">
 indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . 
+</p>
 
-Een synoniem kan, GWSW 1.n kent skos:altLabel:
+<p class="example" title="Een synoniem kan, GWSW 1.n kent skos:altLabel">
 indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442” .
+</p>
 
-Idem in een andere taal-context:
+<p class="example" title="Idem in een andere taal-context">
 indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .
+</p>
 
-Typering van het individu:
+<p class="example" title="Typering van het individu">
 indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .
+</p>
 
-<p class="note" title="BGT-ID">
+<p class="note" title="Een alternatief: BGT-ID">
 Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)
 De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
 </p>
-
-
-
 
 ## Testen 
 <div style="color:gray;font-size:0.8em;">*Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.*</div>
