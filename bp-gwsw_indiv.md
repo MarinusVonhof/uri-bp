@@ -12,14 +12,13 @@ Daarin worden de volgende bronnen aangehaald:
 * Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
-<div style="color:gray;height:0.8rem">*Beschrijft de reden waarom dit goed is om te doen*</div>
+<div style="color:gray;height:0.6em">*Beschrijft de reden waarom dit goed is om te doen*</div>
 
-Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk waterbeheer beschrijft. Het GWSW is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in de linked-data taal RDF/RDFS/OWL-2. 
+Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk water beschrijft. Het is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in RDF/RDFS/OWL-2. 
 
-Meer dan 80 gemeenten hebben datasets opgebouwd conform het GWSW en gepubliceerd op de GWSW Server. Die datasets bevatten de "assets" en activiteiten op het gebied van stedelijk water. De "assets" bestaan veelal uit putten en leidingen, individuen genoemd. Het verwijzen naar individuen met URI’s is essentieel binnen het linked-data principe, zeker nu er meer linked-data platforms verschijnen en de GWSW datasets steeds breder worden toegepast.
+Meer dan 80 gemeenten hebben datasets opgebouwd conform het GWSW en gepubliceerd op de GWSW Server. Die datasets bevatten de assets en activiteiten op het gebied van stedelijk water. Die assets bestaan veelal uit putten en leidingen, ze worden in het algemeen "individuen" genoemd. Het verwijzen naar individuen met URI’s is essentieel binnen het linked-data principe, zeker nu er meer linked-data platforms verschijnen en de GWSW datasets steeds breder worden toegepast.
 
-Een uniforme URI-strategie voor individuen in de "bebouwde omgeving" ontbreekt nog. In zo'n URI kan dan bijvoorbeeld de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) worden onderscheiden. Op korte termijn zou deze strategie uitgewerkt, vastgesteld en gebruikt moeten worden.
-
+Een uniforme URI-strategie voor individuen in de "bebouwde omgeving" ontbreekt nog. In zo'n URI kan dan bijvoorbeeld de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) worden onderscheiden.
 
 ## Beoogd resultaat
 <div style="color:gray">*Beschrijft het beoogde resultaat*</div>
@@ -28,25 +27,6 @@ We willen komen tot een uniforme URI-strategie voor individuen in de "bebouwde o
 ## Implementatie
 
 <div style="color:gray">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
-
-### Uitgangspunt: URI's van concepten in het GWSW Model
-
-Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we: (http wordt omgeleid naar https)
-https://{domain}/{type}/{version}/{filter}/{reference}
-
-{domain} is het web-domein: voor de GWSW-Ontologie is {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
-
-{type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
-
-{version} is de versie: deze meest recente versie van de GWSW ontologie is "1.5.1".
-
-{filter} is het geldende filter ("view") op de GWSW ontologie: om alle concepten op te kunnen vragen geldt filter "Totaal".
-
-{reference} is de verwijzing naar het specifieke concept:
-Het hanteren van begrijpbare namen voor concepten is een gangbare RDF praktijk en ook voor het GWSW heel bruikbaar. We gaan uit van camelCase en CamelCase notatie van de namen voor respectievelijk de properties (starten met lowercase) en de klassen (starten met uppercase).
-
-Een externe overstortput is een GWSW concept (klasse) en heeft in GWSW versie 1.5.1 de URI https://data.gwsw.nl/1.5.1/Totaal/ExterneOverstortput.
-De breedte van een put is een attribuut en heeft de URI https://data.gwsw.nl/1.5.1/Totaal/breedtePut.
 
 ### URI's van individuen binnen de discipline stedelijk water
 
@@ -94,6 +74,27 @@ Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is 
 
 ## Relevante requirements
 In het SDW-BP document staan geen use cases en requirements; deze waren al in een apart document opgenomen [[SDW-UCR]]. Onder dit kopje 'relevante requirements' wordt verwezen naar de voor deze best practice relevante requirements. 
+
+### Uitgangspunt: URI's van concepten in het GWSW Model
+
+Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we: (http wordt omgeleid naar https)
+https://{domain}/{type}/{version}/{filter}/{reference}
+
+{domain} is het web-domein: voor de GWSW-Ontologie is {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
+
+{type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
+
+{version} is de versie: deze meest recente versie van de GWSW ontologie is "1.5.1".
+
+{filter} is het geldende filter ("view") op de GWSW ontologie: om alle concepten op te kunnen vragen geldt filter "Totaal".
+
+{reference} is de verwijzing naar het specifieke concept:
+Het hanteren van begrijpbare namen voor concepten is een gangbare RDF praktijk en ook voor het GWSW heel bruikbaar. We gaan uit van camelCase en CamelCase notatie van de namen voor respectievelijk de properties (starten met lowercase) en de klassen (starten met uppercase).
+
+Een externe overstortput is een GWSW concept (klasse) en heeft in GWSW versie 1.5.1 de URI https://data.gwsw.nl/1.5.1/Totaal/ExterneOverstortput.
+De breedte van een put is een attribuut en heeft de URI https://data.gwsw.nl/1.5.1/Totaal/breedtePut.
+
+
 
 ## Baten
 Het Data on the Web Best Practices [[dwbp]] document bevat een [bijlage](https://www.w3.org/TR/dwbp/#BP_Benefits) waarin een aantal baten worden beschreven die kunnen worden bereikt door het volgen van de best practices. Onder dit kopje 'baten' wordt dan verwezen naar de specifieke baten die worden gerealiseerd door deze specifieke best practice te volgen.
