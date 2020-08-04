@@ -1,7 +1,7 @@
 # Best practice: URI-strategie linked-data-assets stedelijk water
 
 ## In het kort
-<div style="color:gray">*Beschrijving van de best practice in iets langere bewoordingen*</div>
+<div style="color:gray;font-size:0.8em;">*Beschrijving van de best practice in iets langere bewoordingen*</div>
 Een **best practice** voor het identificeren van individuen in linked-data vorm binnen de discipline stedelijk water.
 
 Gebaseerd op de [NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm), zie hoofdstuk 7.7.1 .
@@ -12,7 +12,7 @@ Daarin worden de volgende bronnen aangehaald:
 * Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
-<div style="color:gray;font-size:0.6em;">*Beschrijft de reden waarom dit goed is om te doen*</div>
+<div style="color:gray;font-size:0.8em;">*Beschrijft de reden waarom dit goed is om te doen*</div>
 
 Het Gegevenswoordenboek Stedelijk Water (GWSW) wordt breed toegepast voor stedelijk water beheer in Nederland. Het GWSW is een ontologie, een speciale datastructuur die systemen en processen op het gebied van stedelijk water beschrijft. Het is een open datastandaard volgens het linked data principe die door Stichting RIONED namens de sector is ontwikkeld. Het is onderdeel van het Semantisch Web en is gemodelleerd in RDF/RDFS/OWL-2. 
 
@@ -21,21 +21,22 @@ Meer dan 80 gemeenten hebben datasets opgebouwd conform het GWSW en gepubliceerd
 Een uniforme URI-strategie voor individuen in de "bebouwde omgeving" ontbreekt nog. 
 
 ## Beoogd resultaat
-<div style="color:gray">*Beschrijft het beoogde resultaat*</div>
+<div style="color:gray;font-size:0.8em;">*Beschrijft het beoogde resultaat*</div>
+
 We willen komen tot een uniforme URI-strategie voor individuen in de "bebouwde omgeving", om te beginnen met stedelijk water. Zodanig dat elke te onderscheiden individu met de URI uniek geïdentificeerd kan worden. 
 
 ## Implementatie
 
-<div style="color:gray">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
+<div style="color:gray;font-size:0.8em;">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
 
 **URI's van individuen binnen de discipline stedelijk water**
 
 In de URI wordt de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) onderscheiden.
 De algemene opbouw van de URI is:
 
-https://{domain}/{type}/{organisatie}#{reference} 
+https://{domain}/{type}/{organisatie}#{reference} (http wordt omgeleid naar https)
 
-* {domain}: Identiek aan het GWSW-model (zie requirements)
+* {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 
 * {type}: Het betreft een individual, dus is het type een identifier "id".
 
@@ -60,21 +61,22 @@ indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude
 Idem in een andere taal-context:
 indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “gebrauch alter kode INSP24442”@de .
 
-indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type	gwsw:ExterneOverstortput .
+Typering van het individu:
+indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .
 
 
 ## Testen 
-Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.
+<div style="color:gray;font-size:0.8em;">*Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.*</div>
 
 ## Relevante requirements
-In het SDW-BP document staan geen use cases en requirements; deze waren al in een apart document opgenomen [[SDW-UCR]]. Onder dit kopje 'relevante requirements' wordt verwezen naar de voor deze best practice relevante requirements. 
+<div style="color:gray;font-size:0.8em;">*In het SDW-BP document staan geen use cases en requirements; deze waren al in een apart document opgenomen [[SDW-UCR]]. Onder dit kopje 'relevante requirements' wordt verwezen naar de voor deze best practice relevante requirements.*</div>
 
 ### Uitgangspunt: URI's van concepten in het GWSW Model
 
 Om te verwijzen naar documentlocaties van GWSW-concepten gebruiken we: (http wordt omgeleid naar https)
 https://{domain}/{type}/{version}/{filter}/{reference}
 
-* {domain} is het web-domein: voor de GWSW-Ontologie is {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
+* {domain} is het web-domein: voor de GWSW-Ontologie is dit {locatie}.gwsw.nl. Het subdomein {locatie} voor de ontologie is "data".
 
 * {type} is het soort resource: voor concepten / definities van een term is dat type "def". In de URI hoeft het type niet te worden opgenomen, het subdomein "data" verwijst impliciet naar het type "def".
 
@@ -91,4 +93,4 @@ De breedte van een put is een attribuut en heeft de URI https://data.gwsw.nl/1.5
 
 
 ## Baten
-Het Data on the Web Best Practices [[dwbp]] document bevat een [bijlage](https://www.w3.org/TR/dwbp/#BP_Benefits) waarin een aantal baten worden beschreven die kunnen worden bereikt door het volgen van de best practices. Onder dit kopje 'baten' wordt dan verwezen naar de specifieke baten die worden gerealiseerd door deze specifieke best practice te volgen.
+<div style="color:gray;font-size:0.8em;">Het Data on the Web Best Practices [[dwbp]] document bevat een [bijlage](https://www.w3.org/TR/dwbp/#BP_Benefits) waarin een aantal baten worden beschreven die kunnen worden bereikt door het volgen van de best practices. Onder dit kopje 'baten' wordt dan verwezen naar de specifieke baten die worden gerealiseerd door deze specifieke best practice te volgen.*</div>
