@@ -4,8 +4,10 @@
 <div style="color:gray;font-size:0.8em;">*Beschrijving van de best practice in iets langere bewoordingen*</div>
 Een **best practice** voor het identificeren van individuen in linked-data vorm binnen de discipline stedelijk water.
 
-Gebaseerd op het **Gegevenswoordenboek Stedelijk Water (GWSW)** zie [data.gwsw.nl](https://data.gwsw.nl) en op de 
-[NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm), zie hoofdstuk 7.7.1 . Daarin worden de volgende bronnen aangehaald:
+Gebaseerd op het **Gegevenswoordenboek Stedelijk Water (GWSW)** zie [data.gwsw.nl](https://data.gwsw.nl)  
+*en*  
+Gebaseerd op de [NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm), zie hoofdstuk 7.7.1 . 
+Daarin worden de volgende bronnen aangehaald:
 * [CEDR Interlink URI Strategie](https://www.roadotl.eu/static/media/INTERLINK_D4._Defining_the_Principles_9Okqubw.PDF), vanaf p. 84
 * [Towards a NL URI Strategy](https://www.geonovum.nl/uploads/documents/D1-2013-09-19_Towards_a_NL_URI_Strategy.pdf) 
 * Best Practices for Publishing Linked Data [[ld-bp]]
