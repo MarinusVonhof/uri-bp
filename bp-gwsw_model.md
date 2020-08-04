@@ -7,8 +7,8 @@ Gebaseerd op de [NTA 8035](https://www.nen.nl/NEN-Shop/Norm/NTA-80352020-nl.htm)
 Daarin worden de volgende bronnen aangehaald:
 * [CEDR Interlink URI Strategie](https://www.roadotl.eu/static/media/INTERLINK_D4._Defining_the_Principles_9Okqubw.PDF), vanaf p. 84
 * [Towards a NL URI Strategy](https://www.geonovum.nl/uploads/documents/D1-2013-09-19_Towards_a_NL_URI_Strategy.pdf) 
-* [Best Practices for Publishing Linked Data [ld-bp]](https://www.w3.org/TR/ld-bp/)
-* [Cool URIs for the Semantic Web [cooluris]](https://www.w3.org/TR/cooluris/)
+* Best Practices for Publishing Linked Data [[ld-bp]]
+* Cool URIs for the Semantic Web [[cooluris]]
 
 ## Waarom
 Beschrijft de reden waarom dit goed is om te doen
