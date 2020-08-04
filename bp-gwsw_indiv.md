@@ -42,13 +42,13 @@ https://{domain}/{type}/{organisatie}#{reference} **(http wordt omgeleid naar ht
 * {type}: Het betreft een individual, dus is het type een identifier "id".
 * {organisatie}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor "Roosendaal" betekent dit de code "0601674".
 * {reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
- 
+
 De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 
 <p class="example" title="Prefixes in een dataset">
-@prefix gwsw:    	<https://data.gwsw.nl/1.5.1/totaal/> . 
-@prefix indiv:    	<https://data.gwsw.nl/id/061674#> . 
+@prefix gwsw: <https://data.gwsw.nl/1.5.1/totaal/> .  
+@prefix indiv: <https://data.gwsw.nl/id/061674#> . 
 </p>
 
 <p class="example" title="De unieke naam binnen het rioleringsstelsel">
@@ -68,8 +68,7 @@ indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .
 </p>
 
 <p class="note" title="Een alternatief: BGT-ID">
-Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/)
-De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
+Zie de [Basisregistratie Grootschalige Topografie](https://docs.geostandaarden.nl/imgeo/catalogus/bgt/). De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
 </p>
 
 ## Testen 
