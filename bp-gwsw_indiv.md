@@ -1,4 +1,4 @@
-# Best practice: URI-strategie linked-data-assets stedelijk water
+# URI-strategie linked-data-assets stedelijk water
 
 ## In het kort
 <div style="color:gray;font-size:0.8em;">*Beschrijving van de best practice in iets langere bewoordingen*</div>
@@ -47,8 +47,8 @@ De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 
 <p class="example" title="Prefixes in een dataset">
-@prefix gwsw: <https://data.gwsw.nl/1.5.1/totaal/> .  
-@prefix indiv: <https://data.gwsw.nl/id/061674#> . 
+@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .  
+@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; . 
 </p>
 
 <p class="example" title="De unieke naam binnen het rioleringsstelsel">
