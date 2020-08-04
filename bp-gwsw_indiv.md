@@ -55,6 +55,10 @@ https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
 </div>
 
+<div class="example" title="De unieke naam binnen het rioleringsstelsel">
+<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
+</div>
+
 <div class="example"><div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel"</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442”.</p>
 </div>
