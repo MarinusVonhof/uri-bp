@@ -36,16 +36,22 @@ We willen komen tot een uniforme URI-strategie voor individuen in de bebouwde om
 In de URI wordt de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) onderscheiden.
 De algemene opbouw van de URI is:
 
-&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{organisatie}#{reference}** *(http wordt omgeleid naar https)*
+&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{bronhouder}#{reference}** *(http wordt omgeleid naar https)*
 
 * {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 * {type}: Het betreft een individual, dus is het type een identifier "id".
-* {organisatie}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor bijvoorbeeld de gemeente Roosendaal betekent dit de code "0601674".
+* {bronhouder}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor bijvoorbeeld de gemeente Roosendaal betekent dit de code "0601674".
+<div class="note" title="Andere bronhouder"> <!-- afgeleide titeltekst werkte niet voor remarks -->
+Eigenaars van de stedelijk water voorzieningen zijn niet altijd in de overheidslaag onder te brengen, denk aan terreinriolering. Daarvoor zal een extra code nodig zijn.
+</div>
+
 * {reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
 
 <div class="example"><div class="example-title marker">De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:</div>
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 </div>
+
+Er is gekozen voor een fragment
 
 <div class="example"><div class="example-title marker"><span>Prefixes in een dataset</span></div>
 <p>@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .</p>
