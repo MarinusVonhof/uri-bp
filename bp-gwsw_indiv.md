@@ -36,16 +36,16 @@ We willen komen tot een uniforme URI-strategie voor individuen in de bebouwde om
 In de URI wordt de eigenaar van de gegevens (gemeente, samenwerkingsregio, waterschap, provincie) onderscheiden.
 De algemene opbouw van de URI is:
 
-&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{bronhouder}#{reference}** *(http wordt omgeleid naar https)*
+&nbsp;&nbsp;&nbsp;**https://{domain}/{type}/{location}#{reference}** *(http wordt omgeleid naar https)*
 
 * {domain}: Identiek aan het GWSW-model (data.gwsw.nl, zie requirements)
 * {type}: Het betreft een individual, dus is het type een identifier "id".
-* {bronhouder}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor bijvoorbeeld de gemeente Roosendaal betekent dit de code "0601674".
-<div class="note" title="Andere bronhouder"> <!-- afgeleide titeltekst werkte niet voor remarks -->
+* {location}: De organisatie/eigenaar/beheerder van het individu. Voor het organisatienummer (het identificeren van een lokaal pad) wordt conform de URI-strategie van het Digitaal Stelsel Omgevingswet de CBS-systematiek gehanteerd. Dit is de code van de overheidslaag (01 rijk, 02 uitvoeringsorgaan, 03 provincie, 04 waterschap, 05 gemeenschappelijke regeling, 06 gemeente) gevolgd door de viercijferige CBS-code van de overheidsinstelling. Voor bijvoorbeeld de gemeente Roosendaal betekent dit de code "0601674".
+* {reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
+
+<div class="note" title="Andere bronhouder">
 Eigenaars van de stedelijk water voorzieningen zijn niet altijd in de overheidslaag onder te brengen, denk aan terreinriolering. Daarvoor zal een extra code nodig zijn.
 </div>
-
-* {reference}: Als URL-fragment, de identificatie van het object (bijvoorbeeld een GUID).
 
 <div class="example"><div class="example-title marker">De URI naar een specifieke rioolput in gemeente Roosendaal wordt daarmee:</div>
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
@@ -85,12 +85,14 @@ Zie de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/">Basisregist
 Een BGT-ID bestaat uit de namespace <b>NL.IMGeo</b> (Landcode + Sectormodel) gevolgd door een code voor de <b>Bronhouder</b> (5 posities) en een <b>UUID</b> (32 cijfers).
 De notatiewijze voor het put-voorbeeld wordt dan:
 
-<div class="example"><div class="example-title marker"><span>De BGT-ID van de voorbeeld-put</span></div>
-<p>NL.IMGeo:061674.b2ad189a-8c46-49f2-557ba07c49a2</p>
-</div>
+
 
 Voor de discipline stedelijk water (zeker voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
 
+</div>
+
+<div class="example"><div class="example-title marker"><span>De BGT-ID van de voorbeeld-put</span></div>
+<p>NL.IMGeo:061674.b2ad189a-8c46-49f2-557ba07c49a2</p>
 </div>
 
 ## Testen 
