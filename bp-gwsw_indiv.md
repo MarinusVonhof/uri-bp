@@ -68,9 +68,21 @@ https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2	rdf:type gwsw:ExterneOverstortput .</p>
 </div>
 
-<p class="note" title="Is de BGT-ID een alternatief?"> <!-- afgeleide titeltekst werkte niet voor remarks -->
+<div class="note" title="Ter overweging: Alternatieve notaties"> <!-- afgeleide titeltekst werkte niet voor remarks -->
+<h3>BGT-ID</h3> 
 Zie de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/">Basisregistratie Grootschalige Topografie</a>. De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
-</p>
+
+Een BGT-ID bestaat uit de namespace <b>NL.IMGeo</b> (Landcode + Sectormodel) gevolgd door een code voor de <b>Bronhouder</b> (5 posities) en een <b>UUID</b> (32 cijfers).
+De notatiewijze voor het put-voorbeeld wordt dan:
+
+<div class="example"><div class="example-title marker"><span>De BGT-ID van de voorbeeld-put</span></div>
+<p>NL.IMGeo:061674.b2ad189a-8c46-49f2-557ba07c49a2</p>
+</div>
+
+Voor de discipline stedelijk water (vooral voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
+
+
+</div>
 
 ## Testen 
 <div style="color:gray;font-size:0.8em;">*Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.*</div>
