@@ -51,19 +51,22 @@ Eigenaars van de stedelijk water voorzieningen zijn niet altijd in de overheidsl
 https://data.gwsw.nl/id/061674#b2ad189a-8c46-49f2-557ba07c49a2 
 </div>
 
-Er is gekozen voor een fragment
+Het identificatiedeel van het individu wordt als fragment genoteerd, een paragraaf binnen het "bronhouder-document".
+De individuen worden volledig beschreven in de GWSW-dataset (zijn daar al gedocumenteerd). De eigenaar van het individu kan wijzigen, bijvoorbeeld bij een gemeentelijke herindeling. Ook de bronhouder-code (en de URI van het individu) wijzigt in zo'n geval.
 
 <div class="example"><div class="example-title marker"><span>Prefixes in een dataset</span></div>
 <p>@prefix gwsw: &lt;https://data.gwsw.nl/1.5.1/totaal/&gt; .</p>
 <p>@prefix indiv: &lt;https://data.gwsw.nl/id/061674#&gt; .</p>
 </div>
 
+De assets van elke bronhouder (gemeente, waterschap) staan in een aparte dataset (repository, SPARQL-endpoint). De prefix indiv: is dan bruikbaar voor alle in de dataset opgenomen individuen.
+
 <div class="example"><div class="example-title marker"><span>De unieke naam binnen het rioleringsstelsel</span></div>
 <p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 rdfs:label “P123” . </p>
 </div>
 
 <div class="example"><div class="example-title marker"><span>Een synoniem kan, GWSW 1.n kent skos:altLabel</span></div>
-<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude kode INSP24442”.</p>
+<p>indiv:b2ad189a-8c46-49f2-557ba07c49a2 skos:altLabel “bv te gebruiken voor oude code INSP24442”.</p>
 </div>
 
 <div class="example"><div class="example-title marker"><span>Idem in een andere taal-context</span></div>
@@ -85,8 +88,7 @@ De notatiewijze voor het put-voorbeeld wordt dan:
 <p>NL.IMGeo:061674.b2ad189a-8c46-49f2-557ba07c49a2</p>
 </div>
 
-Voor de discipline stedelijk water (vooral voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
-
+Voor de discipline stedelijk water (zeker voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
 
 </div>
 
