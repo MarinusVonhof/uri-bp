@@ -78,7 +78,8 @@ De assets van elke bronhouder (gemeente, waterschap) staan in een aparte dataset
 </div>
 
 <div class="note" title="Ter overweging: Alternatieve notaties"> <!-- afgeleide titeltekst werkte niet voor remarks -->
-<h3>BGT-ID</h3> 
+
+BGT-ID
 Zie de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/">Basisregistratie Grootschalige Topografie</a>. De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
 
 Een BGT-ID bestaat uit de namespace <b>NL.IMGeo</b> (Landcode + Sectormodel) gevolgd door een code voor de <b>Bronhouder</b> (5 posities) en een <b>UUID</b> (32 cijfers).
