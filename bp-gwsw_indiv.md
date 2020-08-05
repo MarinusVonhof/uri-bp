@@ -29,7 +29,6 @@ We willen komen tot een uniforme URI-strategie voor individuen in de bebouwde om
 
 ## Implementatie
 
-<<<<<<< HEAD
 <div style="color:gray;font-size:0.8em;">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
 
 **URI's van individuen binnen de discipline stedelijk water**
@@ -94,8 +93,6 @@ Voor de discipline stedelijk water (zeker voor riolering) zijn de BGT-ID's niet 
 <p>NL.IMGeo:061674.b2ad189a-8c46-49f2-557ba07c49a2</p>
 </div>
 
-=======
->>>>>>> 2ff181a101b62b8fdd2a599b94f1910688c86592
 ## Testen 
 <div style="color:gray;font-size:0.8em;">*Beschrijft hoe je kan toetsen of de best practice inderdaad geïmplementeerd is in een specifieke omgeving.*</div>
 
