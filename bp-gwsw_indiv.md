@@ -85,8 +85,6 @@ Zie de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/">Basisregist
 Een BGT-ID bestaat uit de namespace <b>NL.IMGeo</b> (Landcode + Sectormodel) gevolgd door een code voor de <b>Bronhouder</b> (5 posities) en een <b>UUID</b> (32 cijfers).
 De notatiewijze voor het put-voorbeeld wordt dan:
 
-
-
 Voor de discipline stedelijk water (zeker voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
 
 </div>
