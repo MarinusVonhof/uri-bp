@@ -29,7 +29,7 @@ We willen komen tot een uniforme URI-strategie voor individuen in de bebouwde om
 
 ## Implementatie
 
-<div style="color:gray;font-size:0.8em;">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</div>
+<span style="color:gray;font-size:0.8em;">*Het "hoe": de implementatierichtingen, voorbeelden, concrete aanwijzingen etc. Het was de bedoeling bij de SDW-BP dat het 'waarom' en het 'beoogde resultaat' algemeen genoeg zijn om voorlopig overeind te blijven, terwijl wat beschreven staat onder 'mogelijke aanpak' veel concreter is, maar daardoor ook veranderlijker kan zijn en misschien ook vaker geactualiseerd moet worden.*</span>
 
 **URI's van individuen binnen de discipline stedelijk water**
 
@@ -78,15 +78,7 @@ De assets van elke bronhouder (gemeente, waterschap) staan in een aparte dataset
 </div>
 
 <div class="note" title="Ter overweging: Alternatieve notaties"> <!-- afgeleide titeltekst werkte niet voor remarks -->
-
-BGT-ID
-Zie de <a href="https://docs.geostandaarden.nl/imgeo/catalogus/bgt/">Basisregistratie Grootschalige Topografie</a>. De BGT-objectidentificatie (object-ID) hanteert de richtlijnen van NEN3610:2011. Aan elk object wordt een uniek identificatienummer toegekend, dat uit twee delen bestaat: een namespace en een identificatiecode. Zolang het object bestaat, mag dit ID niet ver­an­deren. Vanwege de samenhang tussen de BGT en IMGeo wordt één notatiewijze voor het object-ID voorgeschreven.
-
-Een BGT-ID bestaat uit de namespace <b>NL.IMGeo</b> (Landcode + Sectormodel) gevolgd door een code voor de <b>Bronhouder</b> (5 posities) en een <b>UUID</b> (32 cijfers).
-De notatiewijze voor het put-voorbeeld wordt dan:
-
-Voor de discipline stedelijk water (zeker voor riolering) zijn de BGT-ID's niet over te nemen. Ondergrondse leidingen ontbreken in de BGT en van de putten zijn alleen de deksels in de BGT vastgelegd.
-
+test
 </div>
 
 <div class="example"><div class="example-title marker"><span>De BGT-ID van de voorbeeld-put</span></div>
